@@ -1,0 +1,40 @@
+first we will be creating the environment for our app.
+
+pip install pipenv this is already install for me at the time.
+
+pipenv shell
+
+next we will be installing flask and Flask-SQlalchemy
+
+pipenv install Flask Flask-SQLAlchemy.
+
+*****************************************************************************
+
+after setting up the environment, we will be setting up the database and creating a static folder, and templates folder.
+
+we will be using bootstrap CDN and need to import some files.
+
+see that the file structure is correct before moving forward.
+
+see the boilerplate code for the 4 files.
+
+
+******************************************************************************
+
+this will not run yet, we have to do a few things.
+
+1. create the tables in the database.
+
+to get into postgres shell type psql postgres, then \l to see a list of all  the tables.
+type \q anythime to quit.
+
+2. if getting too lazy launch pgadmin, and password is sem123
+
+back to commandline.
+
+3. to create a db type "CREATE DATABASE test;" don't forget the semi colon
+
+to connect to the database \c db name, in this case test.
+
+4. then we have to create the tables with the constraints.
+
